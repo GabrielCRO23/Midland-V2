@@ -353,7 +353,7 @@ footer a {
   color: #2b4162;
 }
 
-footer p {
+footer address {
   font: normal normal 600 18px/23px proxima-soft;
   letter-spacing: 0.72px;
   color: #2b4162;
@@ -568,7 +568,7 @@ footer p {
     letter-spacing: 0.55px;
   }
 
-  footer p {
+  footer address {
     font: normal normal 600 11px/14px Proxima Soft;
     letter-spacing: 0.44px;
   }
