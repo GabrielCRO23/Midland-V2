@@ -437,6 +437,7 @@ footer p {
   }
   .navbar-text {
     font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 0.6px;
   }
   .down-arrow {
     width: 8px;
