@@ -142,7 +142,7 @@ img {
   background-color: #f3f3f3;
 }
 
-.search-container > p {
+.search-text {
   font: normal normal normal 25px/35px Montserrat;
   letter-spacing: 1.25px;
   color: #161616;
@@ -154,9 +154,7 @@ img {
 
 form.job-search-form {
   display: flex;
-
   justify-items: center;
-
   max-width: 2000px;
 }
 
@@ -167,6 +165,10 @@ form.job-search-form {
   border: none;
   font: normal normal normal 22px/27px Montserrat;
   padding-left: 117px;
+}
+
+.job-search-form input::placeholder {
+  color: #161616;
 }
 
 .job-search-form .input-search-container,
@@ -203,7 +205,6 @@ form.job-search-form {
   width: 100%;
   display: flex;
   flex-direction: column;
-
   gap: 50px;
   margin-top: 71px;
 }
@@ -249,7 +250,7 @@ form.job-search-form {
   max-width: 100%;
 }
 
-.partners-container > h2 {
+.partners-title {
   text-align: center;
   font: normal normal 600 50px/74px IvyJournal;
   letter-spacing: 2.5px;
@@ -260,11 +261,16 @@ form.job-search-form {
 
 .logos-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 90px;
   margin-bottom: 100px;
+}
+
+.logos-container > img {
+  max-width: 201px;
+  max-height: auto;
 }
 
 .logos-container > img:hover {
@@ -389,13 +395,13 @@ footer p {
   display: flex;
 }
 
-.footer-icon {
+.footer-icon-location {
   align-self: center;
 }
 
 /* Smaller Desktop/Laptop size */
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1300px) {
   .header {
     width: 100%;
     height: 100px;
@@ -413,10 +419,12 @@ footer p {
   .in-logo {
     width: 19px;
     height: 19px;
+    align-self: center;
   }
   .twitter-logo {
     width: 22px;
     height: 18px;
+    align-self: center;
   }
   .midland-logo {
     width: 236px;
@@ -448,5 +456,160 @@ footer p {
   }
   .title-text {
     font: normal normal 600 39px/58px IvyJournal;
+    letter-spacing: 1.95px;
+  }
+  .intro-title {
+    height: 48px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    color: #2b4162;
+    text-align: center;
+    font: normal normal 600 32px/48px IvyJournal;
+    letter-spacing: 1.6px;
+  }
+  .paragraph-container {
+    margin-bottom: 80px;
+  }
+
+  .intro-paragraph {
+    margin-bottom: 20px;
+    text-align: left;
+    font: normal normal normal 16px/22px Montserrat;
+    letter-spacing: 0.8px;
+    color: #161616;
+  }
+  .search-text {
+    font: normal normal normal 16px/22px Montserrat;
+    letter-spacing: 0.8px;
+    max-width: 500px;
+    margin-top: 70px;
+  }
+  .job-search-form input[type="text"] {
+    height: 51px;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0.42px;
+    padding-left: 80px;
+  }
+  .search-icon-input {
+    width: 19px;
+    height: 19px;
+  }
+  .location-icon-input {
+    width: 15px;
+    height: 22px;
+  }
+  .job-search-form .input-search-container > img {
+    margin-left: 30px;
+  }
+
+  .job-search-form .input-location-container > img {
+    margin-left: 30px;
+  }
+  .job-search-form button[type="submit"] {
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    width: 196px;
+    height: 56px;
+    margin-bottom: 85px;
+    margin-top: 20px;
+  }
+  .partners-container {
+    margin-bottom: 65px;
+  }
+  .partners-title {
+    height: 48px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    font: normal normal 600 32px/48px IvyJournal;
+    letter-spacing: 1.6px;
+  }
+  .logos-container {
+    gap: 60px;
+    margin-bottom: 65px;
+  }
+
+  .logos-container > img {
+    max-width: 132px;
+    max-height: auto;
+  }
+  .action-container-title {
+    font: normal normal 600 32px/48px IvyJournal;
+    letter-spacing: 1.6px;
+    letter-spacing: 2.5px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+  }
+  .action-container-p {
+    max-width: 500px;
+    font: normal normal normal 16px/22px Montserrat;
+    letter-spacing: 0.8px;
+  }
+  .buttons-container {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+  .action-button {
+    width: 236px;
+    height: 143px;
+    font: normal normal 600 12px/15px Montserrat;
+    letter-spacing: 1.2px;
+    color: #fdfdfd;
+  }
+  footer {
+    height: 258px;
+    margin-top: 100px;
+  }
+
+  footer a {
+    font: normal normal 600 11px/13px Proxima Soft;
+    letter-spacing: 0.55px;
+  }
+
+  footer p {
+    font: normal normal 600 11px/14px Proxima Soft;
+    letter-spacing: 0.44px;
+  }
+
+  .footer-logo {
+    margin-top: 20px;
+  }
+
+  .column-one,
+  .column-two,
+  .column-three,
+  .column-four {
+    gap: 25px;
+  }
+
+  .footer-location-container {
+    gap: 15px;
+  }
+  .footer-icons-container {
+    gap: 30px;
+  }
+  .footer-icon-location {
+    width: 12px;
+    height: 17px;
+  }
+  .footer-icon-phone {
+    width: 16px;
+    height: 16px;
+  }
+  .footer-icon-fb {
+    width: 10px;
+    height: 20px;
+  }
+  .footer-icon-in {
+    width: 18px;
+    height: 18px;
+    align-self: center;
+  }
+  .footer-icon-twitter {
+    width: 21px;
+    height: 17px;
+    align-self: center;
   }
 }
