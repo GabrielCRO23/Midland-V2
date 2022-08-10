@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -18,6 +22,7 @@
 .header-icons {
   display: flex;
   gap: 40px;
+  max-width: 100%;
 }
 
 .header-icons img {
@@ -48,9 +53,8 @@
   padding-right: 100px;
 }
 
-.secondary-header > a {
+.navbar-text {
   text-transform: uppercase;
-  text-align: center;
   list-style: none;
   font: normal normal 600 18px/22px Montserrat;
   letter-spacing: 0.9px;
@@ -65,19 +69,6 @@
   cursor: pointer;
 }
 
-.icon-container > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  text-transform: uppercase;
-  font: normal normal 600 18px/22px Montserrat;
-  letter-spacing: 0.9px;
-  color: #9f9f9f;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .icon-container {
   display: flex;
   justify-content: center;
@@ -90,7 +81,7 @@
   text-align: center;
 }
 
-.title-container > h1 {
+.title-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,7 +108,7 @@
   margin-right: 10%;
 }
 
-.intro-container > h2 {
+.intro-title {
   max-width: 691px;
   height: 74px;
   margin-top: 100px;
@@ -130,9 +121,10 @@
 
 .paragraph-container {
   margin-bottom: 100px;
+  max-width: 1518px;
 }
 
-.paragraph-container > p {
+.intro-paragraph {
   margin-bottom: 35px;
   text-align: left;
   font: normal normal normal 25px/35px Montserrat;
@@ -144,7 +136,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
+  justify-content: center;
+  width: 100%;
   height: auto;
   background-color: #f3f3f3;
 }
@@ -157,6 +150,14 @@
   max-width: 800px;
   text-align: center;
   margin-top: 100px;
+}
+
+form.job-search-form {
+  display: flex;
+
+  justify-items: center;
+
+  max-width: 2000px;
 }
 
 .job-search-form input[type="text"] {
@@ -202,6 +203,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+
   gap: 50px;
   margin-top: 71px;
 }
@@ -266,21 +268,25 @@
 }
 
 .logos-container > img:hover {
-  transform: scale(1.1);
+  filter: grayscale(100%);
 }
 
 .action-container {
   display: flex;
   flex-direction: column;
-
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
   height: auto;
   background: #f3f3f3 0% 0% no-repeat padding-box;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
-.action-container > h2 {
+.action-container-inner {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.action-container-title {
   text-align: center;
   font: normal normal 600 50px/74px IvyJournal;
   letter-spacing: 2.5px;
@@ -289,8 +295,9 @@
   margin-top: 100px;
 }
 
-.action-container > p {
+.action-container-p {
   text-align: center;
+  max-width: 800px;
   font: normal normal normal 25px/35px Montserrat;
   letter-spacing: 1.25px;
   color: #161616;
@@ -300,6 +307,7 @@
 .buttons-container {
   display: flex;
   justify-content: space-evenly;
+  max-width: 1536px;
   gap: 20px;
   width: 100%;
   text-align: center;
@@ -385,12 +393,59 @@ footer p {
   align-self: center;
 }
 
-.address {
-  width: 273px;
-  height: 41px;
-}
+/* Smaller Desktop/Laptop size */
 
-.phone {
-  width: 190px;
-  height: 18px;
+@media only screen and (max-width: 1260px) {
+  .header {
+    width: 100%;
+    height: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .header-icons {
+    gap: 25px;
+  }
+  .fb-logo {
+    width: 10px;
+    height: 20px;
+  }
+  .in-logo {
+    width: 19px;
+    height: 19px;
+  }
+  .twitter-logo {
+    width: 22px;
+    height: 18px;
+  }
+  .midland-logo {
+    width: 236px;
+    height: 50px;
+  }
+
+  .header-button {
+    width: 186px;
+    height: 47px;
+    letter-spacing: 1.5px;
+    font: normal normal 600 15px/19px Montserrat;
+  }
+
+  .secondary-header {
+    height: 85px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .navbar-text {
+    font: normal normal 600 12px/15px Montserrat;
+  }
+  .down-arrow {
+    width: 8px;
+    height: 5px;
+  }
+  .icon-container {
+    gap: 7px;
+  }
+  .title-text {
+    font: normal normal 600 39px/58px IvyJournal;
+  }
 }
