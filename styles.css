@@ -586,12 +586,14 @@ footer address {
     letter-spacing: 1.6px;
   }
   .logos-container {
+    max-width: 950px;
+    min-width: 761px;
     gap: 60px;
     margin-bottom: 65px;
   }
 
   .logos-container > img {
-    width: 132px;
+    width: 201px;
     height: auto;
   }
   .action-container-title {
@@ -908,7 +910,7 @@ footer address {
   }
 }
 /* Mobile Size */
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 769px) {
   .header {
     height: 128px;
     padding-left: 35px;
@@ -1011,6 +1013,7 @@ footer address {
     align-items: center;
     gap: 10px;
     margin-bottom: 0px;
+    min-width: 0px;
   }
   .partners-logo {
     width: 201px;
