@@ -279,7 +279,7 @@ form.job-search-form {
   height: auto;
 }
 
-.logos-container > img:hover {
+.partner-logos:hover {
   filter: grayscale(0%);
 }
 
