@@ -280,7 +280,7 @@ form.job-search-form {
 }
 
 .logos-container > img:hover {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 
 .action-container {
@@ -438,16 +438,25 @@ footer address {
   width: 16px;
   height: auto;
   align-self: center;
+  cursor: pointer;
 }
 .footer-icon-in {
   width: 28px;
   height: auto;
   align-self: center;
+  cursor: pointer;
 }
 .footer-icon-twitter {
   width: 33px;
   height: auto;
   align-self: center;
+  cursor: pointer;
+}
+
+.partner-logos {
+  width: 201px;
+  height: 171px;
+  filter: grayscale(100%);
 }
 
 /* Smaller Desktop size */
