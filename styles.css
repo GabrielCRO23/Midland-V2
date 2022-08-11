@@ -418,6 +418,38 @@ footer address {
   height: 76px;
 }
 
+.fb-logo {
+  width: 16px;
+  height: auto;
+  align-self: center;
+}
+.in-logo {
+  width: 28px;
+  height: auto;
+  align-self: center;
+}
+.twitter-logo {
+  width: 33px;
+  height: auto;
+  align-self: center;
+}
+
+.footer-icon-fb {
+  width: 16px;
+  height: auto;
+  align-self: center;
+}
+.footer-icon-in {
+  width: 28px;
+  height: auto;
+  align-self: center;
+}
+.footer-icon-twitter {
+  width: 33px;
+  height: auto;
+  align-self: center;
+}
+
 /* Smaller Desktop size */
 
 @media only screen and (max-width: 1700px) {
