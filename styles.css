@@ -1084,7 +1084,7 @@ footer address {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 9px;
     gap: 40px;
   }
