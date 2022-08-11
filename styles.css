@@ -270,6 +270,7 @@ form.job-search-form {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
   gap: 90px;
   margin-bottom: 100px;
 }
