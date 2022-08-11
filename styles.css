@@ -413,6 +413,11 @@ footer address {
   align-self: center;
 }
 
+.midland-logo {
+  width: 359px;
+  height: 76px;
+}
+
 /* Smaller Desktop size */
 
 @media only screen and (max-width: 1700px) {
